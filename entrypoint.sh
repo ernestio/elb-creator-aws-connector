@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
-echo "Starting network-creator-aws-connector"
-/go/bin/network-creator-aws-connector
+echo "Starting elb-creator-aws-connector"
+/go/bin/elb-creator-aws-connector
