@@ -36,7 +36,6 @@ type Event struct {
 	DatacenterRegion      string   `json:"datacenter_region"`
 	DatacenterAccessKey   string   `json:"datacenter_access_key"`
 	DatacenterAccessToken string   `json:"datacenter_access_token"`
-	ELBAWSID              string   `json:"elb_aws_id,omitempty"`
 	ELBName               string   `json:"elb_name"`
 	ELBIsPrivate          bool     `json:"elb_is_private"`
 	ELBPorts              []Port   `json:"elb_ports"`
