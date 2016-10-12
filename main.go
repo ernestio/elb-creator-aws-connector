@@ -45,7 +45,7 @@ func eventHandler(m *nats.Msg) {
 func mapListeners(ev *Event) []*elb.Listener {
 	var l []*elb.Listener
 
-	for _, port := range ev.ELBPorts {
+	for _, port := range ev.ELBListeners {
 		l = append(l, &elb.Listener{
 			Protocol:         aws.String(port.Protocol),
 			LoadBalancerPort: aws.Int64(port.FromPort),
